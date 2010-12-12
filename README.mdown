@@ -1,8 +1,18 @@
 ## Sty – Colorization and more for Node.js console output
 
+### Installation
+
+You've got Node.js and [npm](http://npmjs.org), right? Then:
+
+    npm install sty
+
+You'll also want [CoffeeScript](http://coffeescript.org):
+
+    npm install coffee-script
+
 ### Quick start
 
-Using [CoffeeScript](http://coffeescript.org):
+Using CoffeeScript:
 
     sty = require 'sty'
     console.log "#{sty.red 'WARNING:'} Color is #{sty.green 'awesome!'}"
@@ -29,7 +39,7 @@ If you want to use ANSI codes directly, each is a valid `sty` function name; so,
 
 ### More documentation
 
-For a complete list of every function/tag name in sty, run demo.coffee (`coffee demo.coffee`—you'll want to `npm install coffee-script` first if you don't have CoffeeScript installed).
+For a complete list of every function/tag name in sty, run demo.coffee (`coffee demo.coffee`) after installation.
 
 ### Disabling Sty
 
