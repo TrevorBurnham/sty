@@ -1,6 +1,4 @@
-# Sty
-
-## Colorization and more for Node.js console output
+## Sty – Colorization and more for Node.js console output
 
 ### Quick start
 
@@ -15,11 +13,11 @@ Nesting works as you'd expect:
 
 You can also use some pseudo-HTML, through `sty.parse`:
 
-   console.log sty.parse 'You are being <b>attacked</b> by the <b><yellow>great dragon</yellow>!</b>'
+    console.log sty.parse 'You are being <b>attacked</b> by the <b><yellow>great dragon</yellow>!</b>'
 
 Forget valid XML; you can move tags around freely:
 
-  console.log sty.parse '<b>W<u>h</b>o</u>a'
+    console.log sty.parse '<b>W<u>h</b>o</u>a'
 
 Tags that aren't supported by sty are ignored (that is, `sty.parse '<foo>'` is just `'<foo>'`).
 
