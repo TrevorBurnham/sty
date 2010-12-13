@@ -54,7 +54,7 @@ exports.parse = (str = '') ->
   while match = str.match tagRegex
     result += str[0...match.index]
     if match[1] # open tag
-      tag = match[1][1...-1]
+      tag = match[1][1...-1].toLowerCase()
       if tag.match numRegex then tag = tag[1..]
       if tag of codes
         result += resetStr if activeCodes and supported
@@ -63,7 +63,7 @@ exports.parse = (str = '') ->
       else
         result += match[1]
     else        # close tag
-      tag = match[2][2...-1]
+      tag = match[2][2...-1].toLowerCase()
       if tag.match numRegex then tag = tag[1..]
       if tag of codes
         activeCodes.splice activeCodes.indexOf(codes[tag]), 1
