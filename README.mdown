@@ -31,6 +31,8 @@ Forget valid XML; you can move tags around freely:
 
 Tags that aren't supported by sty are ignored (that is, `sty.parse '<foo>'` is just `'<foo>'`).
 
+If you find yourself using `console.log sty.parse` a lot, you should probably try [styout](https://github.com/TrevorBurnham/styout).
+
 ### Advanced usage
 
 If you want to use ANSI codes directly, each is a valid `sty` function name; so, for instance, `sty[1]` is identical to `sty.bold`. You can also use these numbers as HTML tags, prefixed by `a` or `A`; for instance, you can get a blink effect with `<A5>`:
