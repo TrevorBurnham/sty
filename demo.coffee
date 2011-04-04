@@ -1,4 +1,4 @@
-sty = require 'sty'
+sty = require './src/sty'
 
 functionNames = (name for name of sty)
 functionNames.sort()
