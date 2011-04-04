@@ -45,7 +45,7 @@ For a complete list of every function/tag name in sty, run demo.coffee (`coffee 
 
 ### Disabling Sty
 
-Weird output will result if the environment doesn't support TTY (e.g. if you're looking at output in TextMate). Unfortunately, there's no way for Sty to determine that right now (it will do so if Node supports the `process.isTTY` method—a proposed addition), but you can manually use `sty.disable()` to turn it off.
+Sty automatically disables fancy output when the console doesn't support it (that is, when Node's `tty.isatty(process.stdout)` is `false`). You can also manually use `sty.disable()` and `sty.enable()` to switch styling on/off.
 
 ### License and credits
 
