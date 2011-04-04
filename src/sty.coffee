@@ -1,4 +1,4 @@
-supported = true unless process.isTTY? and !process.isTTY()
+supported = (require 'tty').isatty process.stdout
 exports.disable = -> supported = false
 exports.enable = -> supported = true
 
@@ -44,7 +44,7 @@ styleStr = (str, code) ->
   str = str.replace resetRegex, "#{resetStr}#{codeStr code}" # allow nesting
   "#{codeStr code}#{str}#{resetStr}"
 
-for name, code of codes
+for name, code of codes then do (name, code) ->
   exports[name] = (str = '') -> if supported then styleStr str, code else str
 
 exports.parse = (str = '') ->
