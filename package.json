@@ -1,23 +1,23 @@
 {
-  'name': 'sty',
-  'description': 'Color and more for the console',
-  'keywords': ['color', 'console', 'utility'],
-  'author': 'Trevor Burnham',
-  'email': 'trevorburnham@gmail.com',
-  'homepage': 'http://github.com/TrevorBurnham/sty',
-  'repository':
+  "name": "sty",
+  "description": "Color and more for the console",
+  "keywords": ["color", "console", "utility"],
+  "author": "Trevor Burnham",
+  "email": "trevorburnham@gmail.com",
+  "homepage": "http://github.com/TrevorBurnham/sty",
+  "repository":
   {
-    'type':'git',
-    'url':'http://github.com/TrevorBurnham/sty.git'
+    "type":"git",
+    "url":"http://github.com/TrevorBurnham/sty.git"
   },
-  'licenses': [{'type': 'MIT'}],
-  'version': '0.6.0',
-  'engines': {
-    'node': '>= 0.4.0',
-    'coffee-script': '~ 1.0.1'
+  "licenses": [{"type": "MIT"}],
+  "version": "0.6.0",
+  "engines": {
+    "node": ">= 0.4.0",
+    "coffee-script": "~ 1.0.1"
   },
-  'directories': {
-    'lib': './lib'
+  "directories": {
+    "lib": "./lib"
   },
-  'main': './lib/sty'
+  "main": "./lib/sty"
 }
