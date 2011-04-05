@@ -41,7 +41,7 @@ tagRegex = /(<\w+>|<A\d+>)|(<\/\w+>|<A\d+>)/i
 numRegex = /\d+/
 
 styleStr = (str, code) ->
-  str = str.replace resetRegex, "#{resetStr}#{codeStr code}" # allow nesting
+  str = ('' + str).replace resetRegex, "#{resetStr}#{codeStr code}" # allow nesting
   "#{codeStr code}#{str}#{resetStr}"
 
 for name, code of codes then do (name, code) ->
